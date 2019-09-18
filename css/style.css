@@ -127,5 +127,20 @@ header {
   top: 197px;
   left: 11.5%;
   z-index: 1; }
+  .banner .row .slider-counter .slider-counter-current {
+    font-size: 24px;
+    font-family: 'Avenir Next Cyr';
+    font-weight: 900;
+    line-height: 33px;
+    color: #FFFFFF; }
+  .banner .row .slider-counter .slider-counter-length {
+    opacity: 0.7;
+    color: #FFFFFF;
+    font-family: "Avenir Next Cyr";
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 19px;
+    top: 4px;
+    left: 41px; }
 
 /*# sourceMappingURL=style.css.map */
