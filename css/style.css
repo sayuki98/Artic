@@ -1,0 +1,131 @@
+@import url(stylesheet.css);
+header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999; }
+  header .container-fluid .row {
+    background-color: #ffffff; }
+    @media screen and (max-width: 414px) {
+      header .container-fluid .row {
+        width: 100vw; } }
+    header .container-fluid .row .navbar {
+      width: 86vw;
+      background-color: #ffffff;
+      padding: 0; }
+      @media screen and (max-width: 768px) {
+        header .container-fluid .row .navbar {
+          padding: 15px 0; } }
+      @media screen and (max-width: 414px) {
+        header .container-fluid .row .navbar {
+          width: auto; } }
+      header .container-fluid .row .navbar .navbar-brand {
+        padding-left: 21px;
+        box-sizing: border-box; }
+        @media screen and (max-width: 414px) {
+          header .container-fluid .row .navbar .navbar-brand {
+            padding-left: 0;
+            margin: 0; } }
+      header .container-fluid .row .navbar div.order-lg-1 span.cart_counter[data-count] {
+        font-size: 21px;
+        color: #091121;
+        font-family: 'Avenir Next Cyr';
+        font-weight: 600; }
+        header .container-fluid .row .navbar div.order-lg-1 span.cart_counter[data-count]:after {
+          content: attr(data-count);
+          display: inline-block;
+          color: #D22001;
+          font-size: 21px;
+          padding-right: 37px;
+          padding-left: 18px; }
+          @media screen and (max-width: 768px) {
+            header .container-fluid .row .navbar div.order-lg-1 span.cart_counter[data-count]:after {
+              padding-right: 0; } }
+      header .container-fluid .row .navbar .navbar-toggler {
+        border: none;
+        outline: none; }
+        @media screen and (max-width: 414px) {
+          header .container-fluid .row .navbar .navbar-toggler {
+            padding: 0; } }
+        header .container-fluid .row .navbar .navbar-toggler i {
+          color: #091121;
+          font-size: 21px; }
+    @media screen and (max-width: 768px) {
+      header .container-fluid .row .navbar-nav {
+        padding: 15px 0; } }
+    header .container-fluid .row .navbar-nav .nav-item {
+      line-height: 122px;
+      padding: 0;
+      margin: 0 1em;
+      border-top: 5px solid transparent;
+      font-size: 21px;
+      color: #091121;
+      font-family: 'Avenir Next Cyr';
+      font-weight: 600;
+      transition: 0.3s; }
+      header .container-fluid .row .navbar-nav .nav-item:hover {
+        border-top: 5px solid #D22001; }
+      @media screen and (max-width: 768px) {
+        header .container-fluid .row .navbar-nav .nav-item {
+          text-align: center;
+          margin: 0; } }
+      @media screen and (max-width: 320px) {
+        header .container-fluid .row .navbar-nav .nav-item {
+          line-height: 112px; } }
+
+.banner .row .slider .slide {
+  width: 100%;
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh; }
+  .banner .row .slider .slide .slide_content {
+    width: 77.1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
+    .banner .row .slider .slide .slide_content h2 {
+      font-size: 80px;
+      line-height: 91px;
+      color: #FFFFFF;
+      max-width: 791px;
+      padding-bottom: 17px; }
+      .banner .row .slider .slide .slide_content h2:after {
+        content: "";
+        display: inline-block;
+        background-color: #D22001;
+        width: 12px;
+        height: 12px; }
+    .banner .row .slider .slide .slide_content p {
+      font-size: 21px;
+      line-height: 44px;
+      max-width: 546px;
+      color: #FFFFFF;
+      padding-bottom: 54px; }
+    .banner .row .slider .slide .slide_content a {
+      color: #FFFFFF;
+      text-decoration: none;
+      border-bottom: 5px solid #FFFFFF;
+      line-height: 33px;
+      font-size: 24px;
+      text-transform: uppercase;
+      width: 192px;
+      position: absolute;
+      top: 205px;
+      right: 0; }
+      .banner .row .slider .slide .slide_content a:before {
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-top: 9px solid transparent;
+        border-bottom: 9px solid transparent;
+        border-left: 21px solid #D22001;
+        margin-right: 15px; }
+.banner .row .slider-counter {
+  top: 197px;
+  left: 11.5%;
+  z-index: 1; }
+
+/*# sourceMappingURL=style.css.map */

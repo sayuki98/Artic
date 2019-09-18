@@ -1,0 +1,201 @@
+@import "stylesheet.css";
+
+$nav_bar_color: #ffffff;
+$main_color: #D22001;
+$headline_color: #091121;
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+
+  .container-fluid {
+    .row {
+      background-color: $nav_bar_color;
+
+      @include max-screen(414px){
+        width: 100vw;
+      }
+
+      .navbar {
+        width: 86vw;
+        background-color: $nav_bar_color;
+        padding: 0;
+
+        @include max-screen(768px) {
+          padding: 15px 0;
+        }
+
+        @include max-screen(414px){
+          width: auto;
+        }
+
+        .navbar-brand {
+          padding-left: 21px;
+          box-sizing: border-box;
+
+          @include max-screen(414px){
+             padding-left: 0;
+            margin: 0;
+          }
+        }
+
+
+        div.order-lg-1 {
+          span.cart_counter[data-count] {
+            font-size: 21px;
+            color: $headline_color;
+            font-family: 'Avenir Next Cyr';
+            font-weight: 600;
+
+
+
+            &:after {
+              content: attr(data-count);
+              display: inline-block;
+              color: $main_color;
+              font-size: 21px;
+              padding-right: 37px;
+              padding-left: 18px;
+
+              @include max-screen(768px){
+                padding-right: 0;
+              }
+            }
+          }
+        }
+
+        .navbar-toggler {
+          border: none;
+          outline: none;
+
+          @include max-screen(414px){
+            padding: 0;
+          }
+
+          i{
+            color: $headline_color;
+            font-size: 21px;
+          }
+        }
+      }
+
+      .navbar-nav {
+        @include max-screen(768px) {
+          padding: 15px 0;
+
+        }
+
+        .nav-item {
+          line-height: 122px;
+          padding: 0;
+          margin: 0 1em;
+          border-top: 5px solid transparent;
+          font-size: 21px;
+          color: $headline_color;
+          font-family: 'Avenir Next Cyr';
+          font-weight: 600;
+          transition: 0.3s;
+
+          &:hover {
+            border-top: 5px solid $main_color;
+          }
+
+          @include max-screen(768px) {
+            text-align: center;
+            margin: 0;
+          }
+          @include max-screen(320px){
+            line-height: 112px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.banner {
+  .row {
+
+    .slider {
+      .slide {
+        width: 100%;
+        background-image: url(../images/banner.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 100vh;
+
+        .slide_content {
+          width: 77.1%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+
+          h2 {
+            font-size: 80px;
+            line-height: 91px;
+            color: #FFFFFF;
+            max-width: 791px;
+            padding-bottom: 25px - 8px;
+
+
+            &:after {
+              content: "";
+              display: inline-block;
+              background-color: $main_color;
+              width: 12px;
+              height: 12px;
+            }
+
+          }
+
+          p {
+            font-size: 21px;
+            line-height: 44px;
+            max-width: 546px;
+            color: #FFFFFF;
+            padding-bottom: 70px - 16px;
+          }
+
+          a {
+            color: #FFFFFF;
+            text-decoration: none;
+            border-bottom: 5px solid #FFFFFF;
+            line-height: 33px;
+            font-size: 24px;
+            text-transform: uppercase;
+            width: 192px;
+            position: absolute;
+            top: 205px;
+            right: 0;
+
+            &:before {
+              content: "";
+              display: inline-block;
+              width: 0;
+              height: 0;
+              border-top: 9px solid transparent;
+              border-bottom: 9px solid transparent;
+              border-left: 21px solid $main_color;
+              margin-right: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    .slider-counter {
+      top: 197px;
+      left: 11.5%;
+      z-index: 1;
+    }
+  }
+}
