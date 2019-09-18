@@ -53,7 +53,14 @@ header {
             color: $headline_color;
             font-family: 'Avenir Next Cyr';
             font-weight: 600;
+            display: inline-block;
+            line-height: 123px;
+            border-left: 2px solid rgba(9, 17, 33, 0.1);
+            padding-left: 53px;
 
+            @include max-screen(320px){
+              padding-left: 23px;
+            }
 
 
             &:after {
@@ -68,6 +75,19 @@ header {
                 padding-right: 0;
               }
             }
+
+            //&:before {
+            //  content: "";
+            //  display: inline-block;
+            //  width: 2px;
+            //  height: 123px;
+            //  margin-bottom: 4px;
+            //  margin-right: 53px;
+            //  border: 1px solid #091121;
+            //  opacity: 0.1;
+            //  box-sizing: border-box;
+            //}
+
           }
         }
 

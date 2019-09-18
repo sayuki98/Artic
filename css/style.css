@@ -30,7 +30,14 @@ header {
         font-size: 21px;
         color: #091121;
         font-family: 'Avenir Next Cyr';
-        font-weight: 600; }
+        font-weight: 600;
+        display: inline-block;
+        line-height: 123px;
+        border-left: 2px solid rgba(9, 17, 33, 0.1);
+        padding-left: 53px; }
+        @media screen and (max-width: 320px) {
+          header .container-fluid .row .navbar div.order-lg-1 span.cart_counter[data-count] {
+            padding-left: 23px; } }
         header .container-fluid .row .navbar div.order-lg-1 span.cart_counter[data-count]:after {
           content: attr(data-count);
           display: inline-block;
