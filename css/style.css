@@ -130,6 +130,33 @@ header {
         border-bottom: 9px solid transparent;
         border-left: 21px solid #D22001;
         margin-right: 15px; }
+.banner .row .owl-nav {
+  position: absolute;
+  bottom: 70px;
+  right: 13vw; }
+  .banner .row .owl-nav .owl-next, .banner .row .owl-nav .owl-prev {
+    width: 67px;
+    height: 67px;
+    text-align: center;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    outline: none;
+    box-sizing: border-box;
+    background-color: transparent; }
+    .banner .row .owl-nav .owl-next i, .banner .row .owl-nav .owl-prev i {
+      color: #FFFFFF;
+      font-size: 23px;
+      line-height: 61px; }
+  .banner .row .owl-nav .owl-next {
+    margin-left: 12px; }
+    .banner .row .owl-nav .owl-next i {
+      transform: translateX(33%); }
+  .banner .row .owl-nav .owl-prev {
+    margin-right: 12px; }
+    .banner .row .owl-nav .owl-prev i {
+      transform: translateX(-33%); }
+.banner .row .owl-dots {
+  display: none; }
 .banner .row .slider-counter {
   top: 197px;
   left: 11.5%;

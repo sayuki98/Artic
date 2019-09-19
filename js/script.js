@@ -4,6 +4,7 @@ $(document).ready(function(){
         loop:true,
         margin:0,
         nav:true,
+        navText: [ '<i class="fas fa-caret-left"></i>', '<i class="fas fa-caret-right"></i>' ],
 
         responsive:{
             0:{

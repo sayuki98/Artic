@@ -4,7 +4,7 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="PAHU" />
     <orderEntry type="module" module-name="Oenrique" />
+    <orderEntry type="module" module-name="Fapor" />
   </component>
 </module>

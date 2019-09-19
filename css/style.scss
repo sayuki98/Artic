@@ -75,19 +75,6 @@ header {
                 padding-right: 0;
               }
             }
-
-            //&:before {
-            //  content: "";
-            //  display: inline-block;
-            //  width: 2px;
-            //  height: 123px;
-            //  margin-bottom: 4px;
-            //  margin-right: 53px;
-            //  border: 1px solid #091121;
-            //  opacity: 0.1;
-            //  box-sizing: border-box;
-            //}
-
           }
         }
 
@@ -210,6 +197,48 @@ header {
           }
         }
       }
+    }
+
+    .owl-nav {
+      position: absolute;
+      bottom: 70px;
+      right: 13vw;
+
+      .owl-next, .owl-prev {
+        width: 67px;
+        height: 67px;
+        text-align: center;
+        border: 2px solid #FFFFFF;
+        border-radius: 50%;
+        outline: none;
+        box-sizing: border-box;
+        background-color: transparent;
+
+        i {
+          color: #FFFFFF;
+          font-size: 23px;
+          line-height: 61px;
+
+        }
+      }
+
+      .owl-next{
+        margin-left: 12px;
+        i{
+          transform: translateX(33%);
+        }
+      }
+
+      .owl-prev{
+        margin-right: 12px;
+        i{
+          transform: translateX(-33%);
+        }
+      }
+    }
+
+    .owl-dots {
+      display: none;
     }
 
     .slider-counter {
