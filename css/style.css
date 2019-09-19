@@ -78,7 +78,7 @@ header {
           margin: 0; } }
       @media screen and (max-width: 320px) {
         header .container-fluid .row .navbar-nav .nav-item {
-          line-height: 112px; } }
+          line-height: 92px; } }
 
 .banner .row .slider .slide {
   width: 100%;
@@ -97,19 +97,53 @@ header {
       line-height: 91px;
       color: #FFFFFF;
       max-width: 791px;
-      padding-bottom: 17px; }
+      padding-bottom: 17px;
+      font-family: 'Avenir Next Cyr';
+      font-weight: 900; }
+      @media screen and (max-width: 414px) {
+        .banner .row .slider .slide .slide_content h2 {
+          font-size: 50px;
+          line-height: 50px; } }
+      @media screen and (max-width: 360px) {
+        .banner .row .slider .slide .slide_content h2 {
+          font-size: 45px;
+          line-height: 45px; } }
+      @media screen and (max-width: 320px) {
+        .banner .row .slider .slide .slide_content h2 {
+          font-size: 40px;
+          line-height: 40px; } }
       .banner .row .slider .slide .slide_content h2:after {
         content: "";
         display: inline-block;
         background-color: #D22001;
         width: 12px;
-        height: 12px; }
+        height: 12px;
+        margin-left: 5px; }
+        @media screen and (max-width: 414px) {
+          .banner .row .slider .slide .slide_content h2:after {
+            width: 8px;
+            height: 8px; } }
     .banner .row .slider .slide .slide_content p {
       font-size: 21px;
       line-height: 44px;
       max-width: 546px;
       color: #FFFFFF;
-      padding-bottom: 54px; }
+      padding-bottom: 54px;
+      font-family: 'Avenir Next Cyr';
+      font-weight: 500; }
+      @media screen and (max-width: 414px) {
+        .banner .row .slider .slide .slide_content p {
+          font-size: 16px;
+          line-height: 32px; } }
+      @media screen and (max-width: 360px) {
+        .banner .row .slider .slide .slide_content p {
+          font-size: 14px;
+          line-height: 28px;
+          padding-bottom: 10px; } }
+      @media screen and (max-width: 320px) {
+        .banner .row .slider .slide .slide_content p {
+          font-size: 14px;
+          line-height: 28px; } }
     .banner .row .slider .slide .slide_content a {
       color: #FFFFFF;
       text-decoration: none;
@@ -120,7 +154,19 @@ header {
       width: 192px;
       position: absolute;
       top: 205px;
-      right: 0; }
+      right: 0;
+      font-weight: bold;
+      font-family: 'Avenir Next Cyr'; }
+      @media screen and (max-width: 414px) {
+        .banner .row .slider .slide .slide_content a {
+          font-size: 18px;
+          width: 150px;
+          top: 220px; } }
+      @media screen and (max-width: 320px) {
+        .banner .row .slider .slide .slide_content a {
+          font-size: 14px;
+          width: 120px;
+          top: 220px; } }
       .banner .row .slider .slide .slide_content a:before {
         content: "";
         display: inline-block;
@@ -130,10 +176,19 @@ header {
         border-bottom: 9px solid transparent;
         border-left: 21px solid #D22001;
         margin-right: 15px; }
+        @media screen and (max-width: 414px) {
+          .banner .row .slider .slide .slide_content a:before {
+            border-width: 7px 18px 7px 18px; } }
+        @media screen and (max-width: 320px) {
+          .banner .row .slider .slide .slide_content a:before {
+            border-width: 6px 16px 6px 16px; } }
 .banner .row .owl-nav {
   position: absolute;
   bottom: 70px;
   right: 13vw; }
+  @media screen and (max-width: 768px) {
+    .banner .row .owl-nav {
+      display: none; } }
   .banner .row .owl-nav .owl-next, .banner .row .owl-nav .owl-prev {
     width: 67px;
     height: 67px;
