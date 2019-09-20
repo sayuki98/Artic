@@ -5,20 +5,14 @@ header {
   right: 0;
   z-index: 999; }
   header .container-fluid .row {
-    background-color: #ffffff; }
-    @media screen and (max-width: 414px) {
-      header .container-fluid .row {
-        width: 100vw; } }
+    width: 100vw; }
     header .container-fluid .row .navbar {
-      width: 86vw;
-      background-color: #ffffff;
+      background-color: #FFFFFF;
       padding: 0; }
-      @media screen and (max-width: 768px) {
-        header .container-fluid .row .navbar {
-          padding: 15px 0; } }
       @media screen and (max-width: 414px) {
         header .container-fluid .row .navbar {
-          width: auto; } }
+          width: auto;
+          padding: 0 15px; } }
       header .container-fluid .row .navbar .navbar-brand {
         padding-left: 21px;
         box-sizing: border-box; }
@@ -88,7 +82,6 @@ header {
   background-size: cover;
   height: 100vh; }
   .banner .row .slider .slide .slide_content {
-    width: 77.1%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end; }
@@ -154,7 +147,7 @@ header {
       width: 192px;
       position: absolute;
       top: 205px;
-      right: 0;
+      right: 15px;
       font-weight: bold;
       font-family: 'Avenir Next Cyr'; }
       @media screen and (max-width: 414px) {
@@ -185,7 +178,7 @@ header {
 .banner .row .owl-nav {
   position: absolute;
   bottom: 70px;
-  right: 13vw; }
+  right: 10.7vw; }
   @media screen and (max-width: 768px) {
     .banner .row .owl-nav {
       display: none; } }
@@ -214,7 +207,7 @@ header {
   display: none; }
 .banner .row .slider-counter {
   top: 197px;
-  left: 11.5%;
+  left: 9.5%;
   z-index: 1; }
   .banner .row .slider-counter .slider-counter-current {
     font-size: 24px;

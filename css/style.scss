@@ -1,6 +1,5 @@
 @import "stylesheet.css";
 
-$nav_bar_color: #ffffff;
 $main_color: #D22001;
 $headline_color: #091121;
 @mixin max-screen($res) {
@@ -17,23 +16,17 @@ header {
 
   .container-fluid {
     .row {
-      background-color: $nav_bar_color;
+      width: 100vw;
 
-      @include max-screen(414px){
-        width: 100vw;
-      }
 
       .navbar {
-        width: 86vw;
-        background-color: $nav_bar_color;
+        //width: 90vw;
+        background-color: #FFFFFF;
         padding: 0;
-
-        @include max-screen(768px) {
-          padding: 15px 0;
-        }
 
         @include max-screen(414px){
           width: auto;
+          padding: 0 15px;
         }
 
         .navbar-brand {
@@ -141,7 +134,7 @@ header {
         height: 100vh;
 
         .slide_content {
-          width: 77.1%;
+          //width: 77.1%;
           display: flex;
           flex-direction: column;
           justify-content: flex-end;
@@ -223,7 +216,7 @@ header {
             width: 192px;
             position: absolute;
             top: 205px;
-            right: 0;
+            right: 15px;
             font-weight: bold;
             font-family: 'Avenir Next Cyr';
 
@@ -265,7 +258,7 @@ header {
     .owl-nav {
       position: absolute;
       bottom: 70px;
-      right: 13vw;
+      right: 10.7vw;
 
       @include max-screen(768px) {
         display: none;
@@ -310,7 +303,7 @@ header {
 
     .slider-counter {
       top: 197px;
-      left: 11.5%;
+      left: 9.5%;
       z-index: 1;
 
       .slider-counter-current{
