@@ -16,25 +16,24 @@ header {
 
   .container-fluid {
     .row {
-      width: 100vw;
+      width: 98vw;
 
 
       .navbar {
-        //width: 90vw;
         background-color: #FFFFFF;
         padding: 0;
 
-        @include max-screen(414px){
+        @include max-screen(414px) {
           width: auto;
           padding: 0 15px;
         }
 
         .navbar-brand {
-          padding-left: 21px;
+          padding-left: 37px;
           box-sizing: border-box;
 
-          @include max-screen(414px){
-             padding-left: 0;
+          @include max-screen(414px) {
+            padding-left: 0;
             margin: 0;
           }
         }
@@ -51,7 +50,7 @@ header {
             border-left: 2px solid rgba(9, 17, 33, 0.1);
             padding-left: 53px;
 
-            @include max-screen(320px){
+            @include max-screen(320px) {
               padding-left: 23px;
             }
 
@@ -64,7 +63,7 @@ header {
               padding-right: 37px;
               padding-left: 18px;
 
-              @include max-screen(768px){
+              @include max-screen(768px) {
                 padding-right: 0;
               }
             }
@@ -75,11 +74,11 @@ header {
           border: none;
           outline: none;
 
-          @include max-screen(414px){
+          @include max-screen(414px) {
             padding: 0;
           }
 
-          i{
+          i {
             color: $headline_color;
             font-size: 21px;
           }
@@ -111,7 +110,7 @@ header {
             text-align: center;
             margin: 0;
           }
-          @include max-screen(320px){
+          @include max-screen(320px) {
             line-height: 92px;
           }
         }
@@ -134,7 +133,6 @@ header {
         height: 100vh;
 
         .slide_content {
-          //width: 77.1%;
           display: flex;
           flex-direction: column;
           justify-content: flex-end;
@@ -148,17 +146,17 @@ header {
             font-family: 'Avenir Next Cyr';
             font-weight: 900;
 
-            @include max-screen(414px){
+            @include max-screen(414px) {
               font-size: 50px;
               line-height: 50px;
             }
 
-            @include max-screen(360px){
+            @include max-screen(360px) {
               font-size: 45px;
               line-height: 45px;
             }
 
-            @include max-screen(320px){
+            @include max-screen(320px) {
               font-size: 40px;
               line-height: 40px;
             }
@@ -172,7 +170,7 @@ header {
               height: 12px;
               margin-left: 5px;
 
-              @include max-screen(414px){
+              @include max-screen(414px) {
                 width: 8px;
                 height: 8px;
               }
@@ -189,18 +187,18 @@ header {
             font-family: 'Avenir Next Cyr';
             font-weight: 500;
 
-            @include max-screen(414px){
+            @include max-screen(414px) {
               font-size: 16px;
               line-height: 32px;
             }
 
-            @include max-screen(360px){
+            @include max-screen(360px) {
               font-size: 14px;
               line-height: 28px;
               padding-bottom: 10px;
             }
 
-            @include max-screen(320px){
+            @include max-screen(320px) {
               font-size: 14px;
               line-height: 28px;
             }
@@ -220,13 +218,13 @@ header {
             font-weight: bold;
             font-family: 'Avenir Next Cyr';
 
-            @include max-screen(414px){
+            @include max-screen(414px) {
               font-size: 18px;
               width: 150px;
               top: 220px;
             }
 
-            @include max-screen(320px){
+            @include max-screen(320px) {
               font-size: 14px;
               width: 120px;
               top: 220px;
@@ -242,11 +240,11 @@ header {
               border-left: 21px solid $main_color;
               margin-right: 15px;
 
-              @include max-screen(414px){
+              @include max-screen(414px) {
                 border-width: 7px 18px 7px 18px;
               }
 
-              @include max-screen(320px){
+              @include max-screen(320px) {
                 border-width: 6px 16px 6px 16px;
               }
             }
@@ -258,7 +256,7 @@ header {
     .owl-nav {
       position: absolute;
       bottom: 70px;
-      right: 10.7vw;
+      right: 9.2vw;
 
       @include max-screen(768px) {
         display: none;
@@ -282,16 +280,18 @@ header {
         }
       }
 
-      .owl-next{
+      .owl-next {
         margin-left: 12px;
-        i{
+
+        i {
           transform: translateX(33%);
         }
       }
 
-      .owl-prev{
+      .owl-prev {
         margin-right: 12px;
-        i{
+
+        i {
           transform: translateX(-33%);
         }
       }
@@ -306,7 +306,7 @@ header {
       left: 9.5%;
       z-index: 1;
 
-      .slider-counter-current{
+      .slider-counter-current {
         font-size: 24px;
         font-family: 'Avenir Next Cyr';
         font-weight: 900;
@@ -324,6 +324,116 @@ header {
         top: 4px;
         left: 41px;
       }
+    }
+  }
+}
+
+.quotes {
+  padding-top: 130px;
+
+  h3 {
+    font-size: 24px;
+    font-family: "Avenir Next Cyr";
+    font-weight: bold;
+    line-height: 44px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: right;
+    margin-bottom: 100px;
+
+    &:before {
+      content: "";
+      display: block;
+      background-color: $main_color;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      left: 0;
+      top: 14px;
+      margin-left: 15px;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 74px;
+    color: $headline_color;
+    font-family: "Avenir Next Cyr";
+    padding-bottom: 100px;
+  }
+
+  .quotes_holder {
+    padding: 0 0 100px;
+
+    div {
+      padding: 0;
+
+      p {
+        font-family: "Avenir Next Cyr";
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 44px;
+        color: $headline_color;
+        border-top: 11px solid $main_color;
+        margin: 0;
+        padding: 30px 0;
+      }
+
+      span {
+        color: #858484;
+        font-family: "Avenir Next Cyr";
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 500;
+        line-height: 27px;
+      }
+    }
+  }
+
+
+  .image_holder {
+    padding: 0;
+    margin-bottom: -497px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .bgi_gradient {
+    background-image: url("../images/gradient.jpg");
+    background-repeat: repeat-y;
+    background-size: contain;
+    padding-top: 597px;
+    padding-bottom: 130px;
+
+
+
+        p {
+          color: #858484;
+          font-family: "Avenir Next Cyr";
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 44px;
+          margin-bottom: 30px;
+
+        }
+
+
+    a{
+      color: #091121;
+      font-family: "Avenir Next Cyr";
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 44px;
+      border-bottom: 5px solid transparent;
+
+      &:hover{
+        text-decoration: none;
+        border-bottom: 5px solid $main_color;
+      }
+
     }
   }
 }

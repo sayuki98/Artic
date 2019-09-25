@@ -5,7 +5,7 @@ header {
   right: 0;
   z-index: 999; }
   header .container-fluid .row {
-    width: 100vw; }
+    width: 98vw; }
     header .container-fluid .row .navbar {
       background-color: #FFFFFF;
       padding: 0; }
@@ -14,7 +14,7 @@ header {
           width: auto;
           padding: 0 15px; } }
       header .container-fluid .row .navbar .navbar-brand {
-        padding-left: 21px;
+        padding-left: 37px;
         box-sizing: border-box; }
         @media screen and (max-width: 414px) {
           header .container-fluid .row .navbar .navbar-brand {
@@ -178,7 +178,7 @@ header {
 .banner .row .owl-nav {
   position: absolute;
   bottom: 70px;
-  right: 10.7vw; }
+  right: 9.2vw; }
   @media screen and (max-width: 768px) {
     .banner .row .owl-nav {
       display: none; } }
@@ -224,5 +224,82 @@ header {
     line-height: 19px;
     top: 4px;
     left: 41px; }
+
+.quotes {
+  padding-top: 130px; }
+  .quotes h3 {
+    font-size: 24px;
+    font-family: "Avenir Next Cyr";
+    font-weight: bold;
+    line-height: 44px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: right;
+    margin-bottom: 100px; }
+    .quotes h3:before {
+      content: "";
+      display: block;
+      background-color: #D22001;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      left: 0;
+      top: 14px;
+      margin-left: 15px; }
+  .quotes h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 74px;
+    color: #091121;
+    font-family: "Avenir Next Cyr";
+    padding-bottom: 100px; }
+  .quotes .quotes_holder {
+    padding: 0 0 100px; }
+    .quotes .quotes_holder div {
+      padding: 0; }
+      .quotes .quotes_holder div p {
+        font-family: "Avenir Next Cyr";
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 44px;
+        color: #091121;
+        border-top: 11px solid #D22001;
+        margin: 0;
+        padding: 30px 0; }
+      .quotes .quotes_holder div span {
+        color: #858484;
+        font-family: "Avenir Next Cyr";
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 500;
+        line-height: 27px; }
+  .quotes .image_holder {
+    padding: 0;
+    margin-bottom: -497px; }
+    .quotes .image_holder img {
+      width: 100%; }
+  .quotes .bgi_gradient {
+    background-image: url("../images/gradient.jpg");
+    background-repeat: repeat-y;
+    background-size: contain;
+    padding-top: 597px;
+    padding-bottom: 130px; }
+    .quotes .bgi_gradient p {
+      color: #858484;
+      font-family: "Avenir Next Cyr";
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 44px;
+      margin-bottom: 30px; }
+    .quotes .bgi_gradient a {
+      color: #091121;
+      font-family: "Avenir Next Cyr";
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 44px;
+      border-bottom: 5px solid transparent; }
+      .quotes .bgi_gradient a:hover {
+        text-decoration: none;
+        border-bottom: 5px solid #D22001; }
 
 /*# sourceMappingURL=style.css.map */
